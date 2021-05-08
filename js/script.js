@@ -34,6 +34,7 @@ addEventListener('scroll', () => {
         white = true;
         nbapp.classList.remove("navbar-dark");
         nbapp.classList.add("navbar-light");
+        nbapp.classList.add("bg-white");
         phone.classList.add("text-black");
         phone.classList.remove("text-white");
     } else {
@@ -42,6 +43,7 @@ addEventListener('scroll', () => {
         nbapp.classList.remove("navbar-light");
         phone.classList.add("text-white");
         phone.classList.remove("text-black");
+        nbapp.classList.remove("bg-white");
     }
 
     if (white == false) {
@@ -49,12 +51,14 @@ addEventListener('scroll', () => {
             nbapp.classList.remove("navbar-dark");
             nbapp.classList.add("navbar-light");
             phone.classList.add("text-black");
+            nbapp.classList.add("bg-white");
             phone.classList.remove("text-white");
         } else {
             nbapp.classList.add("navbar-dark");
             nbapp.classList.remove("navbar-light");
             phone.classList.add("text-white");
             phone.classList.remove("text-black");
+            nbapp.classList.remove("bg-white");
         }
     }
 });
